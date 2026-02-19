@@ -17,7 +17,7 @@ public class Customer implements Serializable {
     private String email;
     private String phone;
     private String address;
-    private final List<Account> accounts;
+    private final ArrayList<Account> accounts;
 
     public Customer(String customerId, String name, String email, String phone) {
         if (customerId == null || customerId.isBlank()) {

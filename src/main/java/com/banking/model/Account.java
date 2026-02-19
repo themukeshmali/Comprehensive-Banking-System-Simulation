@@ -10,7 +10,8 @@ import java.util.Objects;
 
 /**
  * Abstract base class for all bank account types.
- * Provides common account functionality and enforces contract through abstract methods.
+ * Provides common account functionality and enforces contract through abstract
+ * methods.
  */
 public abstract class Account implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -21,7 +22,7 @@ public abstract class Account implements Serializable {
     private double balance;
     private final LocalDateTime createdDate;
     private boolean active;
-    private final List<Transaction> transactionHistory;
+    private final ArrayList<Transaction> transactionHistory;
 
     protected Account(String accountId, String accountHolder, double initialBalance) {
         if (accountId == null || accountId.isBlank()) {
@@ -45,24 +46,28 @@ public abstract class Account implements Serializable {
 
     /**
      * Deposits the specified amount into the account.
+     * 
      * @param amount the amount to deposit
      */
     public abstract void deposit(double amount);
 
     /**
      * Withdraws the specified amount from the account.
+     * 
      * @param amount the amount to withdraw
      */
     public abstract void withdraw(double amount);
 
     /**
      * Calculates interest earned or owed on this account.
+     * 
      * @return the calculated interest amount
      */
     public abstract double calculateInterest();
 
     /**
      * Returns the account type as a string.
+     * 
      * @return account type identifier
      */
     public abstract String getAccountType();
@@ -131,8 +136,10 @@ public abstract class Account implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Account account = (Account) o;
         return Objects.equals(accountId, account.accountId);
     }

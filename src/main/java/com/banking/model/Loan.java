@@ -68,7 +68,7 @@ public class Loan implements Serializable {
      * Calculates Equated Monthly Installment (EMI).
      * EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)
      */
-    public double calculateEMI() {
+    private double calculateEMI() {
         double monthlyRate = annualInterestRate / 12.0 / 100.0;
         if (monthlyRate == 0) {
             return principal / termMonths;
