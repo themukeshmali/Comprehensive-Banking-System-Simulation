@@ -40,7 +40,7 @@ buildNumber.properties
 build/
 
 # IDE
-.idea/
+
 *.iml
 *.iws
 *.ipr
