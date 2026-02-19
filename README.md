@@ -129,3 +129,9 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for detailed architecture and d
 ## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+    
+---
+    
+## 👨‍💻 Author
+    
+- **Mukesh Mali**
