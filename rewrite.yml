@@ -1,5 +1,0 @@
-# OpenRewrite configuration for Java 21 upgrade
----
-name: com.banking.UpgradeToJava21
-activeRecipes:
-  - org.openrewrite.java.migrate.UpgradeToJava21

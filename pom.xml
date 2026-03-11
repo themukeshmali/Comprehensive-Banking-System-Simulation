@@ -69,17 +69,6 @@
                     </archive>
                 </configuration>
             </plugin>
-            <!-- OpenRewrite plugin for code migration -->
-            <plugin>
-                <groupId>org.openrewrite.maven</groupId>
-                <artifactId>rewrite-maven-plugin</artifactId>
-                <version>5.47.3</version>
-                <configuration>
-                    <activeRecipes>
-                        <recipe>com.banking.UpgradeToJava21</recipe>
-                    </activeRecipes>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
